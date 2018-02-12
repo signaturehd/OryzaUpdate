@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "647893085524",
+    "firebase_url": "https://projectoryza.firebaseio.com",
+    "project_id": "projectoryza",
+    "storage_bucket": "projectoryza.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647893085524:android:68f36807c02540d9",
+        "android_client_info": {
+          "package_name": "com.mackoandyelomartinezgmail.oryzaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647893085524-4ttbjfbfqtpohusk5spasg3sra04lar4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mackoandyelomartinezgmail.oryzaapp",
+            "certificate_hash": "d2a02e21de73ada197ebb5ec1b032471cbccbb5c"
+          }
+        },
+        {
+          "client_id": "647893085524-6svia3ogaluqas648mfdg8dsefsmnv63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU3aeND_aPRCiOyA0wNrNhVaLwZsCyp8k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647893085524-6svia3ogaluqas648mfdg8dsefsmnv63.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

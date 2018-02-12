@@ -1,0 +1,128 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mackoandyelomartinezgmail.oryzaapp.TabFragmentation.SacksFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/tempCardView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            app:cardBackgroundColor="@color/black_overlay"
+            app:cardCornerRadius="10dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/humidity">
+
+                <TextView
+                    android:id="@+id/humidityValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/humidityUnit"
+                    android:layout_alignBottom="@+id/humidityUnit"
+                    android:layout_toStartOf="@+id/humidityUnit"
+                    android:fontFamily="@font/productsansbold"
+                    android:text="0"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:id="@+id/humidityUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="11dp"
+                    android:fontFamily="@font/productsansbold"
+                    android:text="%"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/humCardView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tempCardView"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/black_overlay"
+            app:cardCornerRadius="10dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/temp">
+
+                <TextView
+                    android:id="@+id/temperatureValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/temperatureCard"
+                    android:layout_alignBottom="@+id/temperatureCard"
+                    android:layout_toStartOf="@+id/temperatureCard3"
+                    android:fontFamily="@font/productsansbold"
+                    android:text="0"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/temperatureCard3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/temperatureCard"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="17dp"
+                    android:fontFamily="@font/productsansbold"
+                    android:text="o"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/temperatureCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/productsansbold"
+                    android:text="C"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="30sp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/humCardView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+</FrameLayout>

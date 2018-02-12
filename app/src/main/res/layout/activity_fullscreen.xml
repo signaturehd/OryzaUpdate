@@ -1,0 +1,142 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_overlay"
+    tools:context="com.mackoandyelomartinezgmail.oryzaapp.GettingStarted.FullscreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:orientation="vertical"
+            android:textColor="@color/black_overlay"
+            android:textSize="50sp"
+            android:textStyle="bold">
+
+            <TextView
+                android:id="@+id/temp_c1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Title"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="28sp"
+                tools:fontFamily="@font/productsansbold"/>
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                tools:fontFamily="Open sans"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="TODO"
+                android:src="@drawable/logooryza"/>
+
+            <TextView
+                android:id="@+id/power_by"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/power_by"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="22sp"
+                android:textStyle="italic"
+                tools:fontFamily="@font/productsansitalic"/>
+
+            <TextView
+                android:id="@+id/project_oryza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/project_oryza"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="32sp"
+                android:textStyle="italic"
+                tools:fontFamily="@font/productsansbolditalic"/>
+
+            <TextView
+                android:id="@+id/for_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/for_"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:fontFamily="@font/productsansitalic"/>
+
+            <TextView
+                android:id="@+id/DPRM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DPRM"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="22sp"
+                android:textStyle="italic"
+                tools:fontFamily="@font/productsansbolditalic"/>
+
+            <TextView
+                android:id="@+id/temp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                tools:fontFamily="Open sans"/>
+
+            <ImageButton
+                android:id="@+id/getStarted"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:baselineAlignBottom="false"
+                android:contentDescription="@string/tod"
+                android:src="@drawable/getstarted"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

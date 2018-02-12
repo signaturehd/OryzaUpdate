@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">OryzaApp</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="Title">Moisture Content Detection\nand\nMonitoring System</string>
+    <string name="tod">TODO</string>
+    <string name="power_by">powered by</string>
+    <string name="project_oryza">Project Oryza</string>
+    <string name="for_">for</string>
+    <string name="DPRM">Del Pilar Rice Mill</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="titleCardView">Humidity</string>
+    <string name="titleCardView1">Temperature</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_home">Home</string>
+    <string name="action_sacks">Sacks</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sackValue_1">1</string>
+    <string name="sackValue_2">2</string>
+    <string name="sackValue_3">3</string>
+    <string name="sackValue_4">4</string>
+    <string name="sackValue_5">5</string>
+    <string name="sackValue_6">6</string>
+    <string name="sackValue_7">7</string>
+    <string name="sackValue_8">8</string>
+    <string name="sackValue_9">9</string>
+    <string name="sackValue_10">10</string>
+    <string name="sackValue_11">11</string>
+    <string name="sackValue_12">12</string>
+    <string name="sackValue_13">13</string>
+    <string name="sackValue_14">14</string>
+    <string name="sackValue_15">15</string>
+
+</resources>
