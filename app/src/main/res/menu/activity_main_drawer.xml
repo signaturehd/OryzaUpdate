@@ -2,8 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
-        <!-- Note:  android:checkableBehavior="single" -->
-        <group android:checkableBehavior="single">
+        <!--&lt;!&ndash; Note:  android:checkableBehavior="single" &ndash;&gt;-->
+        <!--<group android:checkableBehavior="single">-->
+
+        <!--</group>-->
+
+    <item android:title="Communicate">
+        <menu>
             <item
                 android:id="@+id/nav_frag1"
                 android:icon="@drawable/ic_menu_camera"
@@ -17,18 +22,6 @@
                 android:icon="@drawable/ic_menu_slideshow"
                 android:title="Fragment 3" />
 
-        </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
         </menu>
     </item>
 

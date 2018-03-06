@@ -37,5 +37,6 @@
     <string name="sackValue_13">13</string>
     <string name="sackValue_14">14</string>
     <string name="sackValue_15">15</string>
+    <string name="version">v 1.0</string>
 
 </resources>
