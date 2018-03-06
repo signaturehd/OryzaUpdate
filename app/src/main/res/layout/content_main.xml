@@ -13,32 +13,26 @@
         android:id="@+id/flContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorAccent" />
+        android:background="@color/colorAccent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/productsansitalic"
+                    android:singleLine="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"/>
+            </ScrollView>
+        </RelativeLayout>
+    </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>
-<!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
-    <!--xmlns:tools="http://schemas.android.com/tools"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
-    <!--tools:context="com.mackoandyelomartinezgmail.oryzaapp.MainActivity"-->
-    <!--tools:showIn="@layout/app_bar_main">-->
-    <!--<android.support.v7.widget.Toolbar-->
-        <!--android:id="@+id/toolbar"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:background="?attr/colorPrimary"-->
-        <!--android:elevation="6dp"-->
-        <!--android:minHeight="?attr/actionBarSize"-->
-        <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
-        <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>-->
-
-    <!--<android.support.v4.view.ViewPager-->
-        <!--android:id="@+id/pager"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="fill_parent"-->
-        <!--android:layout_below="@id/toolbar"/>-->
-<!--</android.support.constraint.ConstraintLayout>-->

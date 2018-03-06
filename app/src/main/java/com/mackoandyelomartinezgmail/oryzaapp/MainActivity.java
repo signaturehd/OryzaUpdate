@@ -3,17 +3,21 @@ package com.mackoandyelomartinezgmail.oryzaapp;
 import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.*;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.*;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.TextView;
 
 import com.mackoandyelomartinezgmail.oryzaapp.TabFragmentation.Fragment1;
 import com.mackoandyelomartinezgmail.oryzaapp.TabFragmentation.LogFragment;
@@ -22,14 +26,20 @@ import com.mackoandyelomartinezgmail.oryzaapp.TabFragmentation.SacksFragment;
 public class MainActivity extends AppCompatActivity
         implements Fragment1.OnFragmentInteractionListener, SacksFragment.OnFragmentInteractionListener
         , LogFragment.OnFragmentInteractionListener, NavigationView.OnNavigationItemSelectedListener {
-
+    TextView logTextView = (TextView) findViewById(R.id.tv1);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        logTextView.setText ("Client log:\n", TextView.BufferType.NORMAL);
         setSupportActionBar(toolbar);
+
+        logTextView.append("Initialize API\n");
+        logTextView.append("Establishing Cloud Based Connection\n   "
+         );
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +49,6 @@ public class MainActivity extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
-
 //        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
 //        tabLayout.addTab(tabLayout.newTab().setText("Sacks"));
 //        tabLayout.addTab(tabLayout.newTab().setText("Log"));
@@ -120,6 +129,7 @@ public class MainActivity extends AppCompatActivity
         switch (id) {
             case R.id.action_home:
                 SacksFragment sacksFragment = new SacksFragment();
+
                 return true;
             case R.id.action_sacks:
                 LogFragment logFragment = new LogFragment();

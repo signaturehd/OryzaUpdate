@@ -92,7 +92,6 @@ public class FullscreenActivity extends AppCompatActivity implements View.OnClic
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fullscreen);
-
         btnStartAnotherActivity = (ImageButton) findViewById(R.id.getStarted);
 
         btnStartAnotherActivity.setOnClickListener(this);
